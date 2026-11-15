@@ -1,0 +1,28 @@
+﻿{
+    "manifest_version": 3,
+    "name": "✦ Cloud Editor",
+    "version": "11.45.14",
+    "description": "源码云功能",
+    "permissions": ["scripting"],
+    "host_permissions": [
+        "*://*.codemao.cn/*",
+        "*://*.cocotais.cn/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.codemao.cn/*",
+                "*://*.cocotais.cn/*"
+            ],
+            "js": ["content.js"],
+            "run_at": "document_idle",
+            "all_frames": true
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["inject.js", "libs/*.js"],
+            "matches": ["*://*.codemao.cn/*", "*://*.cocotais.cn/*"]
+        }
+    ]
+}
