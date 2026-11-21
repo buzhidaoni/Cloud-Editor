@@ -1,4 +1,4 @@
-﻿(async function () {
+(async function () {
     const currentScript = document.currentScript
     if (!currentScript) return
 

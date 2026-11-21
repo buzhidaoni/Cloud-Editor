@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     const ORB_ID = "kcf-orb"
     const PANEL_ID = "kcf-panel"
     const STYLE_ID = "kcf-style"
