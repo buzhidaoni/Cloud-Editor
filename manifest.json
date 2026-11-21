@@ -5,12 +5,12 @@
     "description": "源码云功能",
     "permissions": ["scripting"],
     "host_permissions": [
-        "*://player.codemao.cn/new/*"
+        "*://player.codemao.cn/*"
     ],
     "content_scripts": [
         {
             "matches": [
-                "*://player.codemao.cn/new/*"
+                "*://player.codemao.cn/*"
             ],
             "js": ["content.js"],
             "run_at": "document_idle",
@@ -20,7 +20,7 @@
     "web_accessible_resources": [
         {
             "resources": ["inject.js", "libs/*.js"],
-            "matches": ["*://player.codemao.cn/new/*"]
+            "matches": ["*://player.codemao.cn/*"]
         }
     ]
 }
