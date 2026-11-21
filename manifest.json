@@ -5,14 +5,12 @@
     "description": "源码云功能",
     "permissions": ["scripting"],
     "host_permissions": [
-        "*://*.codemao.cn/*",
-        "*://*.cocotais.cn/*"
+        "*://player.codemao.cn/new/*"
     ],
     "content_scripts": [
         {
             "matches": [
-                "*://*.codemao.cn/*",
-                "*://*.cocotais.cn/*"
+                "*://player.codemao.cn/new/*"
             ],
             "js": ["content.js"],
             "run_at": "document_idle",
@@ -22,7 +20,7 @@
     "web_accessible_resources": [
         {
             "resources": ["inject.js", "libs/*.js"],
-            "matches": ["*://*.codemao.cn/*", "*://*.cocotais.cn/*"]
+            "matches": ["*://player.codemao.cn/new/*"]
         }
     ]
 }
