@@ -1,6 +1,6 @@
 # Cloud-Editor
 
-编程猫作品云修改插件
+编程猫KITTEN作品云修改插件
 
 基于 [S-LIGHTNING](https://github.com/S-LIGHTNING) 的 [源码云功能](https://github.com/S-LIGHTNING/Kitten-Cloud-Function)
 
